@@ -1,0 +1,73 @@
+<body style="background-color: #f2f2f2;">
+
+	<div style="width: 1000px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); font-family: Gill Sans MT; color: #035b41; display: flex; align-items: center; justify-content: space-between;">
+		<img src="pic1.png" alt="Henna Uppal" style="width: 40%; height: 600px;">
+		<h1 style="text-align: center; margin-top: -600px; font-size:40px;">HENNA UPPAL</h1>
+		<ul style="position: relative; top: -180px; left: -425px;">
+			<li><strong>Age</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18</li>
+			<li><strong>Location</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London, UK</li>
+			<li><strong>Job Title</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unemployed</li>
+		</ul>
+		<div style="text-align: left; margin-left: -750px; margin-bottom: -150px;">
+			<ul style="list-style-type: none;">
+				<h4 style="display: inline-block; width: 80px; font-weight: bold;"><span style="display: inline-block;">Goals</span></h4>
+				<li style="margin-bottom: 10px;">Stay ahead of latest trends in fashion</li>
+				<li style="margin-bottom: 10px;">Would like to purchase matching accesories</li>
+				<li style="margin-bottom: 10px;">To be active and aware of her surroundings at night</li>
+			</ul>
+			<ul style="list-style-type: none;">
+				<h4 style="display: inline-block; width: 140px; font-weight: bold;"><span style="display: inline-block;">Frustrations</span></h4>
+				<li style="margin-bottom: 10px;">Not able to find her size in stores and online sites</li>
+				<li style="margin-bottom: 10px;">Getting very few options in gym wear for the winter</li>
+				<li style="margin-bottom: 10px;">Length checkout process</li>
+				<li style="margin-bottom: 10px;">Frustrated with less delivery options. No express delivery.</li>
+			</ul>
+			<div style="margin-left: 250px;">
+				<h4 style="display: inline-block; width: 210px; font-weight: bold;"><span style="display: inline-block;">Frequently Used Apps</span></h4>
+				<img src="socials.png" alt="Social Media Apps" style="width: 160px; height: 40px; padding-left: 40px; margin-left: 38px;">
+			</div>
+		</div>
+        <div class="points" style="text-align: left; margin-left: -750px; margin-bottom: -150px;">
+			<ul class="goals-list">
+				<h4 class="underline" style="display: inline-block; width: 80px; font-weight: bold;"><span style="display: inline-block;">Goals</span></h4>
+				<li style="margin-bottom: 10px; list-style-type: none;">Stay ahead of latest trends in fashion</li>
+				<li style="margin-bottom: 10px; list-style-type: none;">Would like to purchase matching accesories</li>
+				<li style="margin-bottom: 10px; list-style-type: none;">To be active and aware of her surroundings at night</li>
+			</ul>
+			<ul class="frustrations-list">
+				<h4 class="underline"  style="margin-bottom: 0;" style="display: inline-block; width: 120px; font-weight: bold;"><span style="display: inline-block;">Frustrations</span></h4>
+				<li style="margin-bottom: 10px; list-style-type: none;">Not able to find her size in stores and online sites</li>
+				<li style="margin-bottom: 10px; list-style-type: none;">Getting very few options in gym wear for the winter</li>
+				<li style="margin-bottom: 10px; list-style-type: none;">Length checkout process</li>
+				<li style="margin-bottom: 10px; list-style-type: none;">Frustrated with less delivery options. No express delivery.</li>
+			</ul>
+			<div class="apps">
+				<h4 class="underline" style="display: inline-block; width: 200px; font-weight: bold;"><span style="display: inline-block;">Frequently Used Apps</span></h4>
+				<img src="socials.png" style="width: 160px; height: 40px; padding-left: 40px; padding-top: none;">
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	window.onload = function() {
+		var goalsHeader = document.querySelector('.goals-list h4');
+		goalsHeader.addEventListener('click', function() {
+			var goalsItems = document.querySelectorAll('.goals-list li');
+			for (var i = 0; i < goalsItems.length; i++) {
+				goalsItems[i].style.color = '#ff0000'; // changes text color to red
+			}
+		});
+
+		var frustrationsHeader = document.querySelector('.frustrations-list h4');
+		frustrationsHeader.addEventListener('click', function() {
+			var frustrationsItems = document.querySelectorAll('.frustrations-list li');
+			for (var i = 0; i < frustrationsItems.length; i++) {
+				frustrationsItems[i].style.color = '#0000ff'; // changes text color to blue
+			}
+		});
+	}
+</script>
+
+
+
+
