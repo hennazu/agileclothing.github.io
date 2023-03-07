@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title>Persona Model</title>
+	<style>
+		.persona {
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			font-family: Gill Sans MT;
+			color: #035b41;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.persona-name img {
+			width: 40%;
+			height: 600px;
+		}
+
+		.persona-name {
+			text-align: center;
+			margin-top: -600px; 
+			font-size:40px;
+		}
+		
+		li {
+			margin-bottom: 10px;
+			list-style-type: none;
+		}
+
+		.persona-list strong {
+			display: inline-block;
+			width: 80px;
+			font-weight: bold;
+		}
+
+		.underline span {
+			display: inline-block;
+		}
+
+		.underline span::after {
+			content: '';
+			height: 5px;
+			background: rgba(198, 91, 4, 0.95);
+			border-radius: 5px;
+			display: block;
+		}
+
+		.info {
+			position: relative;
+			top: -180px;
+			left: -425px;
+		}
+
+		.info strong {
+			color: #024b36;
+
+		}
+
+		.goals-list span {
+			color: #024b36;
+		}
+
+		.frustrations-list span {
+			color: #024b36;
+		}
+
+		.apps span {
+			color: #024b36;
+			margin-left: 38px;
+
+		}
+
+		.apps img {
+			width: 160px;
+			height: 40px;
+			padding-left: 40px;
+			padding-top: none;
+		}
+
+		.points {
+			text-align: left;
+			margin-left: -750px;
+			margin-bottom: -150px;
+		}
+
+	</style>
+	<script>
+		window.onload = function() {
+			var goalsHeader = document.querySelector('.goals-list h4');
+			goalsHeader.addEventListener('click', function() {
+				var goalsItems = document.querySelectorAll('.goals-list li');
+				for (var i = 0; i < goalsItems.length; i++) {
+					goalsItems[i].style.color = '#ff0000'; // changes text color to red
+				}
+			});
+
+			var frustrationsHeader = document.querySelector('.frustrations-list h4');
+			frustrationsHeader.addEventListener('click', function() {
+				var frustrationsItems = document.querySelectorAll('.frustrations-list li');
+				for (var i = 0; i < frustrationsItems.length; i++) {
+					frustrationsItems[i].style.color = '#0000ff'; // changes text color to blue
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<div class="persona">
+		<img src="pic1.png" alt="Henna Uppal">
+    <h1 class="persona-name">HENNA UPPAL</h1>
+		<ul class="info">
+			<li><strong>Age</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18</li>
+			<li><strong>Location</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London, UK</li>
+			<li><strong>Job Title</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unemployed</li>
+		</ul>
+		<div class="points">
+			<ul class="goals-list">
+				<h4 class="underline"><span>Goals</span></h4>
+				<li>Stay ahead of latest trends in fashion</li>
+				<li>Would like to purchase matching accesories</li>
+				<li>To be active and aware of her surroundings at night</li>
+			</ul>
+			<ul class="frustrations-list">
+				<h4 class="underline"><span>Frustrations</span></h4>
+				<li>Not able to find her size in stores and online sites</li>
+				<li>Getting very few options in gym wear for the winter</li>
+				<li>Length checkout process</li>
+				<li>Frustrated with less delivery options. No express delivery.</li>
+			</ul>
+			<div class="apps">
+			<h4 class="underline" ><span>Frequently Used Apps</span></h4>
+			<img src="socials.png">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
