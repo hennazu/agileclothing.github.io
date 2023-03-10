@@ -1,387 +1,171 @@
- 
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap'); 
-
- 
-
-*{ 
-
-  margin: 0; 
-
-  padding: 0; 
-
-  box-sizing: border-box; 
-
-  list-style: none; 
-
-  font-family: 'Josefin Sans', sans-serif; 
-
-} 
-
- 
-
-.wrapper{ 
-
-  position: absolute; 
-
-  top: 50%; 
-
-  left: 50%; 
-
-  transform: translate(-50%,-50%); 
-
-  width: 450px; 
-
-  display: flex; 
-
-  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08); 
-
-} 
-
- 
-
-.wrapper .left{ 
-
-  width: 35%; 
-
-  background: linear-gradient(to right,#01a9ac,#01dbdf); 
-
-  padding: 30px 25px; 
-
-  border-top-left-radius: 5px; 
-
-  border-bottom-left-radius: 5px; 
-
-  text-align: center; 
-
-  color: #fff; 
-
-} 
-
- 
-
-.wrapper .left img{ 
-
-  border-radius: 5px; 
-
-  margin-bottom: 10px; 
-
-} 
-
- 
-
-.wrapper .left h4{ 
-
-  margin-bottom: 10px; 
-
-} 
-
- 
-
-.wrapper .left p{ 
-
-  font-size: 12px; 
-
-} 
-
- 
-
-.wrapper .right{ 
-
-  width: 65%; 
-
-  background: #fff; 
-
-  padding: 30px 25px; 
-
-  border-top-right-radius: 5px; 
-
-  border-bottom-right-radius: 5px; 
-
-} 
-
- 
-
-.wrapper .right .info, 
-
-.wrapper .right .info{ 
-
-  margin-bottom: 25px; 
-
-} 
-
- 
-
-.wrapper .right .info h3, 
-
-.wrapper .right .info h3{ 
-
-    margin-bottom: 15px; 
-
-    padding-bottom: 5px; 
-
-    border-bottom: 1px solid #e0e0e0; 
-
-    color: #353c4e; 
-
-  text-transform: uppercase; 
-
-  letter-spacing: 5px; 
-
-} 
-
- 
-
-.wrapper .right .info_data, 
-
-.wrapper .right .info_data{ 
-
-  display: flex; 
-
-  justify-content: space-between; 
-
-} 
-
- 
-
-.wrapper .right .info_data .data, 
-
-.wrapper .right .info_data .data{ 
-
-  width: 45%; 
-
-} 
-
- 
-
-.wrapper .right .info_data .data h4, 
-
-.wrapper .right .info_data .data h4{ 
-
-    color: #353c4e; 
-
-    margin-bottom: 5px; 
-
-} 
-
- 
-
-.wrapper .right .info_data .data p, 
-
-.wrapper .right .info_data .data p{ 
-
-  font-size: 13px; 
-
-  margin-bottom: 10px; 
-
-  color: #919aa3; 
-
-} 
-
- 
-
-.wrapper .social_media ul{ 
-
-  display: flex; 
-
-} 
-
- 
-
-.wrapper .social_media ul li{ 
-
-  width: 45px; 
-
-  height: 45px; 
-
-  background: linear-gradient(to right,#01a9ac,#01dbdf); 
-
-  margin-right: 10px; 
-
-  border-radius: 5px; 
-
-  text-align: center; 
-
-  line-height: 45px; 
-
-} 
-
- 
-
-.wrapper .social_media ul li a{ 
-
-  color :#00FFFF; 
-
-  display: block; 
-
-  font-size: 24px; 
-
-} 
-
- 
-
- 
-
-MAIN SCRIPT 
-
- 
-
- 
-
- 
-
-<div class="wrapper"> 
-
-    <div class="left"> 
-
-        <img src="PersonaUserpic.jpg" alt="User Persona " width="110"> 
-
-      <br> 
-
-        <h3>JEFFREY</h3> 
-
-        <br>  
-
-      <h5>Real Estate Agent</h5> 
-
-    </div> 
-
-    <div class="right"> 
-
-        <div class="info"> 
-
-            <h3>Information</h3> 
-
-            <div class="info_data"> 
-
-                 <div class="data"> 
-
-                    <h4>Email</h4> 
-
-                    <p>JeffreyH@org.com</p> 
-
-                 </div> 
-
-                 <div class="data"> 
-
-                   <h4>Phone</h4> 
-
-                    <p>+229536287</p> 
-
-              </div> 
-
-            </div> 
-
-           
-
-        </div> 
-
-       <div class="info"> 
-
-            <h3>About</h3> 
-
-            <div class="info_data"> 
-
-                 <div class="data"> 
-
-                    <h4>28 years old</h4> 
-
-                   <br> 
-
-                    <p>Taurus &#128512;</p> 
-
-                 </div> 
-
-                 <div class="data"> 
-
-                   <h4>Lives in Manchester</h4> 
-
-                    <p>Party Animal &#128526;</p> 
-
-              </div> 
-
-            </div> 
-
-        </div> 
-
-      <div class="info"> 
-
-            <h3>What he buys</h3> 
-
-            <div class="info_data"> 
-
-                 <div class="data"> 
-
-                    <h4>Gym wear</h4> 
-
-                   <br>  
-
-<br> 
-
-                    <p> Prefers sets</p> 
-
-                 </div> 
-
-                 <div class="data"> 
-
-                   <h4> Sports Equipment </h4> 
-
-                   <br> 
-
-                    <p> Weights, Bands</p> 
-
-              </div> 
-
-            </div> 
-
-        </div> 
-
- <div class="info"> 
-
-            <h3>Fav Brands</h3> 
-
-            <div class="info_data"> 
-
-                 <div class="data"> 
-
-                    <h4>Under Armour</h4> 
-
-                   <br> 
-
-                    <p>Perfect fit</p> 
-
-                 </div> 
-
-                 <div class="data"> 
-
-                   <h4>Champions</h4> 
-
-                   <br>  
-
-                    <p>Trendy styles</p> 
-
-              </div> 
-
-            </div> 
-
-        </div> 
-
-       
-
-        <div class="social_media"> 
-
-            <ul> 
-
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
-
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
-
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
-
-          </ul> 
-
-      </div> 
-
-    </div> 
-
-</div> 
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    display: flex;
+		margin: 0 auto;
+		background-color: #ffffff;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .wrapper .left{
+    width: 35%;
+    background: linear-gradient(to right,#c7b9e8,#a8a1d8);
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .wrapper .left img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper .left h4{
+    margin-bottom: 10px;
+  }
+
+  .wrapper .left p{
+    font-size: 12px;
+  }
+
+  .wrapper .right{
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .wrapper .right .info,
+  .wrapper .right .info{
+    margin-bottom: 25px;
+  }
+
+  .wrapper .right .info h3,
+  .wrapper .right .info h3{
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e0e0e0;
+      color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .wrapper .right .info_data,
+  .wrapper .right .info_data{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper .right .info_data .data,
+  .wrapper .right .info_data .data{
+    width: 45%;
+  }
+
+  .wrapper .right .info_data .data h4,
+  .wrapper .right .info_data .data h4{
+      color: #353c4e;
+      margin-bottom: 5px;
+  }
+
+  .wrapper .right .info_data .data p,
+  .wrapper .right .info_data .data p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #919aa3;
+  }
+
+</style>
+<body>
+<button onclick="window.history.back()">Go back</button>
+<div class="wrapper">
+    <div class="left">
+        <img src="helen.jpg" alt="Picture" width="110">
+      <br>
+        <h3>Helen A</h3>
+        <br>
+      <h5>Student</h5>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Email</h4>
+                    <p>HelenA@org.com</p>
+                 </div>
+                 <div class="data">
+                   <h4>Phone</h4>
+                    <p>+229536287</p>
+              </div>
+            </div>
+         
+        </div>
+       <div class="info">
+            <h3>About</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>26 years old</h4>
+                   <br>
+                    <p>Scorpio &#128512;</p>
+                 </div>
+                 <div class="data">
+                   <h4>Lives in Reading</h4>
+                    <p>Wine Lover &#128526;</p>
+              </div>
+            </div>
+        </div>
+      <div class="info">
+            <h3>What she buys</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Gym wear</h4>
+                   <br>
+<br>
+                    <p> Prefers sets</p>
+                 </div>
+                 <div class="data">
+                   <h4> Sports Equipment </h4>
+                   <br>
+                    <p> Weights, Bands</p>
+              </div>
+            </div>
+        </div>
+ <div class="info">
+            <h3>Fav Brands</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Under Armour</h4>
+                   <br>
+                    <p>Perfect fit</p>
+                 </div>
+                 <div class="data">
+                   <h4>Champions</h4>
+                   <br> <br>
+                    <p>Trendy styles</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
